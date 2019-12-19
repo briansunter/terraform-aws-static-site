@@ -2,7 +2,7 @@ provider "aws" {
   region = "${var.region}"
 }
 
-module "site" {
+module "static-site" {
   source = "./modules/site"
   region = var.region
   domain = var.domain
